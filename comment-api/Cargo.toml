@@ -1,0 +1,17 @@
+[package]
+name = "comment-api"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8.4"
+serde = {version = "1.0.225", features = ["derive"]}
+tokio = {version = "1.47.1", features = ["full"]}
+serde_json = "1.0.145"
+rusqlite = {version = "0.37.0", features = ["bundled"]}
+uuid ={ version =  "1.18.1" , features = ["v4"]}
+bcrypt = "0.17.1"
+r2d2 = "0.8.10"
+r2d2_sqlite = "0.31.0"
+chrono = "0.4.42"
+anyhow = "1.0.99"
