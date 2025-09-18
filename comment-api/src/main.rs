@@ -33,7 +33,7 @@ async fn main() {
         .with_state(state)
         .layer(cors);
 
-    let addr = SocketAddr::from(([127, 0, 0, 1], 7777));
+    let addr = SocketAddr::from(([0, 0, 0, 0], 7777));
     println!("서버 실행중: http://{}", addr);
     let listener = TcpListener::bind(addr).await.expect("리스너 바인딩 실패");
 
